@@ -1,0 +1,9 @@
+<resources>
+  <string name="app_name">My Application</string>
+  <string name="error_request">Ha sucedido un error en tu solicitud</string>
+  <string name="text_search_title">BÚSQUEDA</string>
+  <string name="text_result_search">RESULTADOS</string>
+  <string name="text_ups">¡UPS!</string>
+  <string name="text_message_empty_search">No hemos encontrado resultado\npara la palabra “buscada”</string>
+
+</resources>

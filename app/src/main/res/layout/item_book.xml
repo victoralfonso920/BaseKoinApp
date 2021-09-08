@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/constraintLayoutParent"
+
+  android:layout_width="@dimen/_130sdp"
+  android:layout_height="@dimen/_130sdp"
+  android:background="@drawable/commerce_card_shadow">
+
+  <com.google.android.material.imageview.ShapeableImageView
+    android:id="@+id/imageViewCover"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toTopOf="@id/constraintLayout3"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.TopCornerRadiusCardShadow"
+    tools:background="@color/skeleton_athens_gray" />
+
+  <de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/circleImageViewLogo"
+    android:layout_width="@dimen/_25sdp"
+    android:layout_height="@dimen/_25sdp"
+    android:layout_marginStart="@dimen/_8sdp"
+    android:layout_marginBottom="@dimen/_8sdp"
+    android:src="@color/skeleton_athens_gray"
+    app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+    app:layout_constraintStart_toStartOf="parent" />
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/constraintLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_35sdp"
+    android:layout_gravity="bottom"
+    android:background="@android:color/white"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+
+    <TextView
+      android:id="@+id/txtTitleBook"
+      android:layout_width="@dimen/_60sdp"
+      android:layout_height="@dimen/_10sdp"
+      android:layout_marginStart="@dimen/_10sdp"
+      android:background="@color/skeleton_athens_gray"
+      app:layout_constraintBottom_toTopOf="@+id/textViewCommerceCategory"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+      android:id="@+id/textViewCommerceCategory"
+      android:layout_width="0dp"
+      android:layout_height="@dimen/_8sdp"
+      android:layout_marginTop="@dimen/_2sdp"
+      android:layout_marginEnd="@dimen/_12sdp"
+      android:background="@color/skeleton_athens_gray"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/txtTitleBook"
+      app:layout_constraintTop_toBottomOf="@+id/txtTitleBook" />
+
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

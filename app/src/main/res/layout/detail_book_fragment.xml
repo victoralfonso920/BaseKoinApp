@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  tools:context=".views.detailbook.DetailBook">
+
+  <com.google.android.material.imageview.ShapeableImageView
+    android:id="@+id/imageViewCover"
+    android:layout_width="0dp"
+    android:layout_height="@dimen/_200sdp"
+    android:adjustViewBounds="true"
+    android:scaleType="centerInside"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.TopCornerRadiusCardShadow"
+    tools:background="@color/skeleton_athens_gray" />
+
+  <ImageView
+    android:id="@+id/imgBack"
+    android:layout_width="@dimen/_40sdp"
+    android:layout_height="@dimen/_40sdp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:adjustViewBounds="true"
+    android:scaleType="centerInside"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/ic_toolbar_back" />
+
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/constraintLayoutChildParent"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginTop="32dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/imageViewCover">
+
+
+    <TextView
+      android:id="@+id/txtTitleBook"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="32dp"
+      android:fontFamily="@font/roboto_bold"
+      android:textSize="@dimen/_13ssp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:background="@color/skeleton_athens_gray" />
+    <TextView
+      android:id="@+id/textViewTime"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="32dp"
+      android:textSize="@dimen/_10ssp"
+      app:layout_constraintEnd_toEndOf="@+id/txtTitleBook"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtTitleBook"
+      tools:background="@color/skeleton_athens_gray" />
+    <TextView
+      android:id="@+id/textViewCommerceCategory"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:textSize="@dimen/_10ssp"
+      app:layout_constraintEnd_toEndOf="@+id/txtTitleBook"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textViewTime"
+      tools:background="@color/skeleton_athens_gray" />
+
+
+    <TextView
+      android:id="@+id/textViewAmount"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:maxLines="3"
+      android:textSize="@dimen/_10ssp"
+      app:layout_constraintEnd_toEndOf="@+id/textViewCommerceCategory"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textViewCommerceCategory"
+      tools:background="@color/skeleton_athens_gray" />
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
