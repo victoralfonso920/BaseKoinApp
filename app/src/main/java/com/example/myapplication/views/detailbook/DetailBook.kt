@@ -13,6 +13,9 @@ import com.example.myapplication.tools.extensions.setTextFromHtml
 import com.example.myapplication.tools.loge
 import org.koin.android.ext.android.inject
 import kotlin.reflect.KClass
+// Created by Victor Hernandez on 30/7/21.
+// Proyect My Application
+//contact victoralfonso920@gmail.com
 
 class DetailBook : BaseFragment<DetailBookViewModel,DetailBookFragmentBinding>(DetailBookFragmentBinding::inflate) {
 

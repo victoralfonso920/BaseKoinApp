@@ -20,6 +20,9 @@ import com.example.myapplication.tools.extensions.makeVisible
 import com.example.myapplication.tools.extensions.setTextFromHtml
 import org.koin.android.ext.android.inject
 import kotlin.reflect.KClass
+// Created by Victor Hernandez on 30/7/21.
+// Proyect My Application
+//contact victoralfonso920@gmail.com
 
 class HomeFragment :
     BaseFragment<HomeViewModel, HomeFragmentBinding>(HomeFragmentBinding::inflate) {

@@ -1,9 +1,6 @@
-/*
- * Create by Byron Solorzano on 27/1/2020.
- *
- * Copyright (c) 2020 Byron Solorzano.
- * All rights reserved.
- */
+// Created by Victor Hernandez on 30/7/21.
+// Proyect My Application
+//contact victoralfonso920@gmail.com
 
 package com.example.myapplication.base.viewModel
 
