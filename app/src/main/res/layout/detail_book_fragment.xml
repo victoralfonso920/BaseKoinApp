@@ -5,12 +5,13 @@
   android:layout_width="match_parent"
   android:layout_height="match_parent"
   xmlns:app="http://schemas.android.com/apk/res-auto"
-  tools:context=".views.detailbook.DetailBook">
+  tools:context=".views.detailbook.DetailBookFragment">
 
   <com.google.android.material.imageview.ShapeableImageView
     android:id="@+id/imageViewCover"
     android:layout_width="0dp"
     android:layout_height="@dimen/_200sdp"
+    android:layout_marginTop="64dp"
     android:adjustViewBounds="true"
     android:scaleType="centerInside"
     app:layout_constraintEnd_toEndOf="parent"
@@ -27,6 +28,8 @@
     android:layout_marginTop="8dp"
     android:adjustViewBounds="true"
     android:scaleType="centerInside"
+    android:elevation="0.5dp"
+    android:background="@drawable/btn_oval_white"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
     app:srcCompat="@drawable/ic_toolbar_back" />

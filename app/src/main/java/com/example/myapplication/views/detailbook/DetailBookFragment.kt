@@ -17,7 +17,7 @@ import kotlin.reflect.KClass
 // Proyect My Application
 //contact victoralfonso920@gmail.com
 
-class DetailBook : BaseFragment<DetailBookViewModel,DetailBookFragmentBinding>(DetailBookFragmentBinding::inflate) {
+class DetailBookFragment : BaseFragment<DetailBookViewModel,DetailBookFragmentBinding>(DetailBookFragmentBinding::inflate) {
 
     override val viewModelClass: KClass<DetailBookViewModel>  = DetailBookViewModel::class
 

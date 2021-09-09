@@ -20,7 +20,7 @@
   </fragment>
   <fragment
     android:id="@+id/detailBook"
-    android:name="com.example.myapplication.views.detailbook.DetailBook"
+    android:name="com.example.myapplication.views.detailbook.DetailBookFragment"
     android:label="detail_book_fragment"
     tools:layout="@layout/detail_book_fragment" >
     <argument
